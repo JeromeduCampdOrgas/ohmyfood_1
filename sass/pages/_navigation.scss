@@ -1,5 +1,7 @@
 .navigation{
-    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;;
     &__form{
         text-align:center;
         background-color:#cdcecf;
@@ -11,10 +13,22 @@
         margin-left:15px;;
     }
     &__description{
-        margin-top:0;
-        padding:15px;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:center;
+        padding-bottom:20px;
         background-color:#e3e4e5;
         text-align:center;
+    }
+    &__explore{
+        text-decoration: none;
+        width:61%;
+        background:linear-gradient(to bottom,$secondaire,#9356dc);
+        color:#fff;
+        padding:15px 15px 15px 15px;
+        border-radius:25px;;
+      
     }
     
 }
