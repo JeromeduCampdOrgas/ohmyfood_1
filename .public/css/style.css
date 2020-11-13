@@ -1,5 +1,5 @@
 .heading a {
-  margin-left: 65px;
+  margin-left: 58px;
 }
 
 .heading {
@@ -17,10 +17,30 @@
   background-size: cover;
 }
 
+.navigation {
+  width: 100%;
+}
+.navigation__form {
+  text-align: center;
+  background-color: #cdcecf;
+  padding: 10px;
+}
+.navigation__input {
+  border: none;
+  background-color: #cdcecf;
+  margin-left: 15px;
+}
+.navigation__description {
+  margin-top: 0;
+  padding: 15px;
+  background-color: #e3e4e5;
+  text-align: center;
+}
+
 @media screen and (max-width: 599px) {
   body {
     box-sizing: border-box;
-    width: 98%;
+    width: 100%;
   }
 }
 

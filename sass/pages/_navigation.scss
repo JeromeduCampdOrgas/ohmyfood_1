@@ -1,0 +1,20 @@
+.navigation{
+    width:100%;
+    &__form{
+        text-align:center;
+        background-color:#cdcecf;
+        padding:10px;
+    }
+    &__input{
+        border:none;
+        background-color:#cdcecf;
+        margin-left:15px;;
+    }
+    &__description{
+        margin-top:0;
+        padding:15px;
+        background-color:#e3e4e5;
+        text-align:center;
+    }
+    
+}

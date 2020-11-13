@@ -1,10 +1,11 @@
 @import "utils/variables";
 @import "pages/header";
 @import "pages/accueil";
+@import "pages/navigation";
 
 @media screen and (max-width:599px){
     body{
         box-sizing: border-box;
-        width:98%;
+        width:100%;
     }
 }
