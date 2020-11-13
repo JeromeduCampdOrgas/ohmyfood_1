@@ -1,7 +1,9 @@
-.header__logo {
-  font: italic 106px "shrikhand", sans-serif;
-  font-weight: bold;
-  color: #000;
+.heading a {
+  margin-left: 65px;
+}
+
+.heading__img {
+  max-width: 50%;
   text-align: center;
 }
 
