@@ -1,8 +1,13 @@
+@import "base/polices";
 @import "utils/variables";
-@import "pages/header";
-@import "pages/accueil";
-@import "pages/navigation";
-@import "pages/fonctionnement";
+@import "layout/header";
+@import "layout/restaurants";
+@import "layout/navigation";
+@import "layout/fonctionnement";
+
+    a{
+        text-decoration:none;
+    }
 
 @media screen and (max-width:599px){
     body{

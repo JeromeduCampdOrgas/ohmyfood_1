@@ -1,3 +1,8 @@
+h2 {
+  font-family: "Shrikhand";
+  width: 100%;
+}
+
 .heading a {
   margin-left: 58px;
 }
@@ -10,10 +15,75 @@
   text-align: center;
 }
 
-.restau {
+.restaurants {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
   width: 100%;
-  border: 1px black solid;
-  background-image: url("../.././cdc/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.restaurants__zone {
+  width: 100%;
+}
+.restaurants__liste {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  min-height: 215px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 15px;
+  background: #fff;
+  border: 1px #f2f2f2 solid;
+  box-shadow: 0 5px 5px #ddd;
+}
+.carte__nom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  margin: 0 0 0 0;
+  padding: 0 0 0px 5px;
+}
+
+.identification {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  max-height: 100%;
+  width: 85%;
+  max-height: 100%;
+}
+.identification__identity {
+  margin: 0;
+  height: 50%;
+}
+.identification__city {
+  margin: 0;
+}
+
+.appreciation {
+  margin: 5px 0 0 0;
+  font-size: 21px;
+}
+
+#restaurant1 {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
 }
 
@@ -83,6 +153,10 @@
 }
 .stepBlock__text {
   margin: 0 45px 0 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 599px) {
