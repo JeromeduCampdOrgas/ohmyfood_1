@@ -1,3 +1,169 @@
+h2 {
+  font-family: "Shrikhand";
+  width: 100%;
+}
 
+.heading a {
+  margin-left: 58px;
+}
+
+.heading {
+  margin: 15px;
+}
+.heading__img {
+  max-width: 50%;
+  text-align: center;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+}
+.restaurants__zone {
+  width: 100%;
+}
+.restaurants__liste {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  min-height: 215px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 15px;
+  background: #fff;
+  border: 1px #f2f2f2 solid;
+  box-shadow: 0 5px 5px #ddd;
+}
+.carte__nom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  margin: 0 0 0 0;
+  padding: 0 0 0px 5px;
+}
+
+.identification {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  max-height: 100%;
+  width: 85%;
+  max-height: 100%;
+}
+.identification__identity {
+  margin: 0;
+  height: 50%;
+}
+.identification__city {
+  margin: 0;
+}
+
+.appreciation {
+  margin: 5px 0 0 0;
+  font-size: 21px;
+}
+
+#restaurant1 {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.navigation__form {
+  text-align: center;
+  background-color: #cdcecf;
+  padding: 10px;
+}
+.navigation__input {
+  border: none;
+  background-color: #cdcecf;
+  margin-left: 15px;
+}
+.navigation__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+  background-color: #e3e4e5;
+  text-align: center;
+}
+.navigation__explore {
+  text-decoration: none;
+  width: 61%;
+  background: linear-gradient(to bottom, #FF79DA, #9356dc);
+  color: #fff;
+  padding: 15px 15px 15px 15px;
+  border-radius: 25px;
+}
+
+.commandStep {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.commandStep__step {
+  border-radius: 100%;
+  background: #9356DC;
+  padding: 3px 7px 3px 7px;
+  margin: 17px -5px 14px 0;
+  height: 18px;
+  z-index: 5;
+}
+
+.stepBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 15px 0;
+  padding: 3px 2px 2px 2px;
+  height: 50px;
+  width: 275px;
+  background-color: #f8fafc;
+  box-shadow: 1px 1px 1px 1px #e3e4e5;
+  border-radius: 15px;
+}
+.stepBlock__icone {
+  margin: 0 0 0 20px;
+}
+.stepBlock__text {
+  margin: 0 45px 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 599px) {
+  body {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
