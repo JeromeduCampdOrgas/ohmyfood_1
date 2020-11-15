@@ -3,16 +3,21 @@ h2 {
   width: 100%;
 }
 
-.heading a {
-  margin-left: 58px;
-}
-
-.heading {
-  margin: 15px;
-}
 .heading__img {
   max-width: 50%;
   text-align: center;
+}
+
+.heading div {
+  text-align: center;
+  position: relative;
+}
+
+.retour {
+  position: absolute;
+  left: 15px;
+  top: 8px;
+  color: #000;
 }
 
 .detail {
