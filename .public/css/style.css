@@ -263,14 +263,16 @@ body {
   background-color: #f2f2f2;
 }
 .plats__title {
+  font-weight: 200;
   width: 90%;
 }
-.plats__title h3::after {
+.plats__title:after {
+  content: "";
   display: block;
-  content: "___";
-  width: 5px;
-  height: 3px;
-  background: #99E2D0;
+  margin: 0 0 0 0;
+  width: 12%;
+  padding-top: 9;
+  border-bottom: 3px solid #99E2D0;
 }
 
 .plats__detail {
