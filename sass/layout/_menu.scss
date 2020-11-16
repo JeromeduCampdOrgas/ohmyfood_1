@@ -87,7 +87,7 @@ body{
         display: block; 
         margin: 0 0 0 0; 
         width: 12%; 
-        padding-top: 9; 
+        padding-top: 9px; 
         border-bottom: 3px solid $tertiaire; 
     
     }
@@ -99,8 +99,8 @@ body{
     background-color:#fff;
     border-radius:15px;
     box-shadow:2px 2px 2px #f1f1f1;
-    margin-bottom:10px;
-    width:90%;
+    margin:0 15px 10px 0;
+    width:95%;
 
     &__plat{
         margin:0 0 0 5px;
@@ -108,7 +108,7 @@ body{
             font-weight:bold;
         }
         &__precision{
-            font-size: 0.8em;
+            font-size: 0.9em;
         }
     }
     &__tarif{
@@ -117,7 +117,6 @@ body{
         justify-content:space-between;
         margin-right:10px;
         min-width:25%;
-        background:grey;
         &__prix{
             font-weight:bold;
         }
