@@ -1,0 +1,130 @@
+body{
+    background-color:#f2f2f2;
+}
+.menu{
+    height:300px;
+    width:97%;
+    /*border-radius:15px;*/
+    background-color:#f2f2f2;
+    border:1px #f2f2f2 solid;
+    box-shadow:0 5px 5px #ddd;
+    &__carte{
+        min-height:80%;   
+        /*border-radius:15px 15px 0 0;*/
+        position:relative;
+        &__new{
+            position:absolute;
+            right:0;
+            background:$tertiaire;
+            margin:30px 30px 0 0;
+            width:90px;
+            height:26px;
+            text-align:center;
+            padding:7px 0 0 0;
+            font-weight:bold;
+            color:#10ab1d;
+
+        }
+    }
+    &__restau{
+        display:block;
+        margin-bottom:20px;
+  
+    }
+    &__nom{
+        display:flex;
+        justify-content:space-between;
+        position:relative;
+        max-height:20%;
+        background-color:#f2f2f2;
+        border-radius:15px 15px 0 0;
+        margin:-29px 0px 0 0px;
+        padding:0 0 0 0;
+    }
+    &__identity{
+        margin:15px 0 5px 10px;
+        color:#000;
+        font: italic  bold 2.2em 'shrikhand';
+    }
+    &__identification{
+        margin-left:10px;
+    }
+    &__heart{
+        margin:30px 20px 0 0;
+        font-size:21px;
+    }
+}
+.restau1{
+    background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        background-size:cover;
+}
+.restau2{
+    background-image: url("/images/restaurants/la_note_enchantee_resize.jpg");
+        background-size:cover;
+}
+.restau3{
+    background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+        background-size:cover;
+}
+
+.restau4{
+    background-image: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+        background-size:cover;
+}
+
+.plats{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#f2f2f2;    
+    &__title{
+        width:90%;
+    }
+    &__title h3::after{
+        display:block;
+        content:"___";
+        width:5px;
+        height:3px;
+        background:$tertiaire;
+    }
+}
+.plats__detail{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;  
+    background-color:#fff;
+    border-radius:15px;
+    box-shadow:2px 2px 2px #f1f1f1;
+    margin-bottom:10px;
+    width:90%;
+
+    &__plat{
+        margin:0 0 0 5px;
+        &__nom{
+            font-weight:bold;
+        }
+        &__precision{
+            font-size: 0.8em;
+        }
+    }
+    &__tarif{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        margin-right:10px;
+        min-width:25%;
+        background:grey;
+        &__prix{
+            font-weight:bold;
+        }
+        &__check{
+            visibility:hidden;
+        }
+
+    }
+}
+.commander{
+    text-align:center;
+    margin: 70px 0 100px 0;
+}
