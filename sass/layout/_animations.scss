@@ -5,7 +5,7 @@
         color:$primaire;
     }
 }
-
+/*page restaurant*/
 .commander{
     transform:scale(1);
     transition:transform 400ms;
@@ -13,4 +13,19 @@
         transform:scale(1.2);
     }
 }
-
+/*Case à cocher*/
+.check{
+    width:0;
+    text-align:center;
+    background-color:$tertiaire;
+    padding:35px 0 35px 0;
+    color:$blanc;
+    border-radius:0 15px 15px 0;
+    overflow:hidden;
+    transition:width 500ms linear;
+}
+.carte:active{
+    .check{
+        width:25%;
+    }
+}
