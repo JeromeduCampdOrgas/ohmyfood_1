@@ -9,7 +9,10 @@
 @import "layout/animations";
 
 
-
+body{
+    margin:0 auto;
+    box-sizing:border-box;
+}
 @media screen and (max-width:599px){
     body{
         box-sizing: border-box;
