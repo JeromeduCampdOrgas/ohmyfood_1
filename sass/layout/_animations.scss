@@ -4,7 +4,7 @@
     & i{
         color:$primaire;
     }
-
+}
 
 .commander{
     transform:scale(1);
@@ -14,22 +14,3 @@
     }
 }
 
-/*.check{
-    width:0;
-    overflow:hidden;
-    border-radius:0 15px 15px 0;
-    background:$tertiaire;
-    height:100%;
-    i{
-        display:inline-block;
-
-        color:$noir;
-        }
-
-    
-}
-.prix:hover + .check{
-    transition:width 500ms ;
-    width:60%;
-    /*overflow:visible;
-}*/

@@ -1,10 +1,10 @@
-/* Error: expected "}".
+/* Error: unmatched "}".
  *    ,
- * 35 | }*∕
- *    |    ^
+ * 41 | }
+ *    | ^
  *    '
- *   sass\layout\_animations.scss 35:4  @import
- *   sass\main.scss 9:9                 root stylesheet */
+ *   sass\layout\_fonctionnement.scss 41:1  @import
+ *   sass\main.scss 6:9                     root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a    \2577 \a 35 \2502  }*/\a    \2502     ^\a    \2575 \a   sass\\layout\\_animations.scss 35:4  @import\a   sass\\main.scss 9:9                 root stylesheet';
+  content: 'Error: unmatched "}".\a    \2577 \a 41 \2502  }\a    \2502  ^\a    \2575 \a   sass\\layout\\_fonctionnement.scss 41:1  @import\a   sass\\main.scss 6:9                     root stylesheet';
 }
