@@ -297,11 +297,11 @@ footer i {
 }
 
 /*page restaurant*/
-.commander {
+.btn {
   transform: scale(1);
   transition: transform 400ms;
 }
-.commander:hover {
+.btn:hover {
   transform: scale(1.2);
 }
 
