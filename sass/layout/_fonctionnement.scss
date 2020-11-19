@@ -1,16 +1,21 @@
 .fonctionnement{
     background:$blanc;
+    & h2{
+        margin-left:10px;
+    }
 }
 .commandStep{
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
+    align-content:center;
+    margin:auto;
 
     .step{
         border-radius:100%;
         background:$primaire;
         padding:8px 10px 0px 10px;
-        margin:12px -8px 14px 0;
+        margin:12px -8px 14px 8px;
         height:25px;
         z-index: 5;
     }

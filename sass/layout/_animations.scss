@@ -23,9 +23,17 @@
     border-radius:0 15px 15px 0;
     overflow:hidden;
     transition:width 500ms linear;
-}
-.carte:active{
-    .check{
-        width:25%;
+
+    & i{
+        transition: transform 500ms;
     }
+}
+.carte:hover{
+    .check{
+            width:25%;
+        & + i{
+            transform:rotate(90deg);
+        }
+    }
+
 }

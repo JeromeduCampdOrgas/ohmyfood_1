@@ -1,5 +1,6 @@
 @import "base/polices";
 @import "utils/variables";
+@import "utils/mixins";
 @import "layout/header";
 @import "layout/restaurants";
 @import "layout/navigation";
@@ -7,15 +8,10 @@
 @import "layout/footer";
 @import "layout/menu";
 @import "layout/animations";
+@import "layout/responsive";
 
 
 body{
     margin:0 auto;
     box-sizing:border-box;
-}
-@media screen and (max-width:599px){
-    body{
-        box-sizing: border-box;
-        width:100%;
-    }
 }

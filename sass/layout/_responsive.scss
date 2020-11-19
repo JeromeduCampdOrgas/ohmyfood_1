@@ -1,0 +1,60 @@
+@media screen and (min-width:640px){
+/*Navigation*/
+    .navigation__description{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        & div{
+            width:60%;
+        }
+    }
+    .navigation__explore{
+        max-width:15px;
+    }
+
+/*Fonctionnement*/
+    .fonctionnement{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        align-content:space-between;
+        flex-wrap:wrap;
+        & h2{
+            width:100%;
+            text-align:center;
+            margin:30px;
+        }
+    }
+    .commandStep{
+        max-width:25%;
+    }
+/*Restaurants*/
+    .restaurants{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+        & h2{
+            width:100%;
+            text-align:center;
+        }
+        & .restau{
+            max-width:22%;
+        }
+        
+    }
+
+/*footer*/
+    .footer{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        
+        & .footer__logo{
+         width:100%;
+         text-align:center;
+     }
+    }
+     
+}

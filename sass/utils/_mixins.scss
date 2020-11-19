@@ -1,0 +1,16 @@
+@mixin logoPolice{
+    font: italic  bold 1.2em 'shrikhand';
+}
+@mixin textePolice{
+     font-family:'roboto';
+}
+@mixin boxShadow{
+    box-shadow:0 5px 5px #ddd;
+}
+@mixin btn{
+    background:linear-gradient(to bottom,$secondaire,#9356dc);
+    color:$blanc;
+    padding:10px;
+    margin:auto;
+    border-radius:25px;
+}

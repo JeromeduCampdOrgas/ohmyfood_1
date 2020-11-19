@@ -14,9 +14,9 @@
 <body>
     <header class ="heading">
         <div >
-            <a href="">
+            
                 <img class ="heading__img" src="./images/logo/ohmyfood.png" alt="logo">
-            </a>
+    
         </div>
     </header>
     <section class = "navigation">
@@ -25,9 +25,12 @@
             <input class = "navigation__input" type="text" value="Paris, Belleville">
         </form>
         <div class= "navigation__description">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <a href ="#" class = "navigation__explore">Explorez nos restaurants</a>
+            <div>
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            </div>
+            <input class ="btn btnExplore" type="button" value =" Explorez nos restaurants">
+            
         </div>
     </section>
     <section class = "fonctionnement">
@@ -58,6 +61,7 @@
 
     <section class = "restaurants">
         <h2>Restaurants</h2>
+ 
         <a class= "restau" href="la_palette_du_gout.html">
             <div class = "detail">
                 <div class= "carte restau1">
@@ -127,13 +131,17 @@
     </section>
 
     <footer>
-        <p class ="footer__logo">
-        ohmyfood
-        </p>
-        <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
-        <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
-        <p>Mentions légales</p>
-        <p>Contact</p>
+        <div class ="footer">
+            <p class ="footer__logo">
+                ohmyfood
+            </p>
+
+
+            <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+            <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+            <p>Mentions légales</p>
+            <p>Contact</p>
+        </div>
     </footer>
     
 </body>

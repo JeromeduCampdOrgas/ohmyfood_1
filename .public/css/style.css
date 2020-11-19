@@ -18,6 +18,8 @@ a {
 }
 
 .heading div {
+  padding: 10px 0;
+  height: 60px;
   text-align: center;
   position: relative;
 }
@@ -29,9 +31,13 @@ a {
   color: #000;
 }
 
+.restaurants h2 {
+  margin-left: 10px;
+}
+
 .restau {
   display: block;
-  margin-bottom: 20px;
+  margin: 0 10px 20px 10px;
   width: 95%;
 }
 
@@ -124,12 +130,13 @@ a {
   background-color: #e3e4e5;
   text-align: center;
 }
-.navigation__explore {
-  text-decoration: none;
-  width: 61%;
+.navigation__description p {
+  margin-left: 10px;
+}
+.navigation .btnExplore {
   background: linear-gradient(to bottom, #FF79DA, #9356dc);
   color: #fff;
-  padding: 15px 50px 15px 50px;
+  padding: 10px;
   margin: auto;
   border-radius: 25px;
 }
@@ -137,17 +144,22 @@ a {
 .fonctionnement {
   background: #fff;
 }
+.fonctionnement h2 {
+  margin-left: 10px;
+}
 
 .commandStep {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-content: center;
+  margin: auto;
 }
 .commandStep .step {
   border-radius: 100%;
   background: #9356DC;
   padding: 8px 10px 0px 10px;
-  margin: 12px -8px 14px 0;
+  margin: 12px -8px 14px 8px;
   height: 25px;
   z-index: 5;
 }
@@ -176,7 +188,6 @@ a {
 footer {
   background: #000;
   color: #fff;
-  width: 97%;
   padding-bottom: 20px;
 }
 
@@ -260,6 +271,7 @@ footer i {
 }
 .menu .carte .choix div:nth-child(2) {
   align-self: flex-end;
+  margin-right: 10px;
   font-weight: bold;
 }
 
@@ -291,21 +303,80 @@ footer i {
   overflow: hidden;
   transition: width 500ms linear;
 }
-
-.carte:active .check {
-  width: 25%;
+.check i {
+  transition: transform 500ms;
 }
 
+.carte:hover .check {
+  width: 25%;
+}
+.carte:hover .check + i {
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 640px) {
+  /*Navigation*/
+  .navigation__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navigation__description div {
+    width: 60%;
+  }
+
+  .navigation__explore {
+    max-width: 15px;
+  }
+
+  /*Fonctionnement*/
+  .fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  .fonctionnement h2 {
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .commandStep {
+    max-width: 25%;
+  }
+
+  /*Restaurants*/
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .restaurants .restau {
+    max-width: 22%;
+  }
+
+  /*footer*/
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer .footer__logo {
+    width: 100%;
+    text-align: center;
+  }
+}
 body {
   margin: 0 auto;
   box-sizing: border-box;
-}
-
-@media screen and (max-width: 599px) {
-  body {
-    box-sizing: border-box;
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
