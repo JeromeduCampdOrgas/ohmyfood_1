@@ -56,5 +56,17 @@
          text-align:center;
      }
     }
-     
+
+/*Menus*/
+    .menus{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+
+        & .menu{
+            min-width:30%;
+        }
+        
+    }
 }
+     

@@ -66,4 +66,12 @@
         }
         
     }
+    
 }
+.commande{
+    width:100%;
+    text-align:center;
+}
+.btnCommande{
+        @include btn;
+    }

@@ -275,6 +275,19 @@ footer i {
   font-weight: bold;
 }
 
+.commande {
+  width: 100%;
+  text-align: center;
+}
+
+.btnCommande {
+  background: linear-gradient(to bottom, #FF79DA, #9356dc);
+  color: #fff;
+  padding: 10px;
+  margin: auto;
+  border-radius: 25px;
+}
+
 /*section Fonctionnement*/
 .stepBlock:hover {
   background-color: #f2eafb;
@@ -372,6 +385,16 @@ footer i {
   .footer .footer__logo {
     width: 100%;
     text-align: center;
+  }
+
+  /*Menus*/
+  .menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menus .menu {
+    min-width: 30%;
   }
 }
 body {
