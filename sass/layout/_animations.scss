@@ -31,9 +31,27 @@
 .carte:hover{
     .check{
             width:25%;
-        & + i{
-            transform:rotate(90deg);
+        & > i{
+            transform:rotate(360deg);
         }
     }
 
 }
+/*remplissage du coeur*/
+.menuHeart{
+    & .far{
+    opacity:1;
+    transition:opacity 2000ms;
+    }
+    & .fas{
+        opacity:0;
+        transition:opacity 2000ms;
+        }
+    &:hover{
+        & .far{
+            opacity:0;
+        }
+        & .fas{
+            opacity:1;
+        }
+}}

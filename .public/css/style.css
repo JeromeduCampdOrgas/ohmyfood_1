@@ -235,6 +235,8 @@ footer i {
   opacity: 1;
 }
 .menuHeart .fas {
+  color: #9356DC;
+  border: none;
   opacity: 0;
 }
 
@@ -323,8 +325,24 @@ footer i {
 .carte:hover .check {
   width: 25%;
 }
-.carte:hover .check + i {
-  transform: rotate(90deg);
+.carte:hover .check > i {
+  transform: rotate(360deg);
+}
+
+/*remplissage du coeur*/
+.menuHeart .far {
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+.menuHeart .fas {
+  opacity: 0;
+  transition: opacity 2000ms;
+}
+.menuHeart:hover .far {
+  opacity: 0;
+}
+.menuHeart:hover .fas {
+  opacity: 1;
 }
 
 @media screen and (min-width: 640px) {
@@ -357,7 +375,7 @@ footer i {
   }
 
   .commandStep {
-    max-width: 25%;
+    min-width: 25%;
   }
 
   /*Restaurants*/
