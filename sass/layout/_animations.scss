@@ -1,3 +1,5 @@
+
+
 /*section Fonctionnement*/
 .stepBlock:hover{
     background-color:$primaireTransparent;
@@ -6,11 +8,29 @@
     }
 }
 /*page restaurant*/
+$clr-btn:linear-gradient(to bottom,#FF79DA,#9356dc);
+
 .btn{
-    transform:scale(1);
-    transition:transform 400ms;
+    background-color:$clr-btn;
+    
+    position:relative;
+    z-index:1;
      &:hover{
-        transform:scale(1.2);
+         &::after{
+             opacity:1;
+         }
+     }
+    &::after{
+        content:"";
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:5;
+        
+        z-index:-1;
+        transition:opacity 400ms;
     }
 }
 /*Case à cocher*/
@@ -54,4 +74,14 @@
         & .fas{
             opacity:1;
         }
-}}
+    }
+}
+/*apparition des menus*/
+.menus{
+    & .menu:nth-child(1){
+        opacity:0;
+        transition-delay:0.5s;
+        transition-property:opacity 400ms;
+    }
+    
+}
