@@ -8,30 +8,21 @@
     }
 }
 /*page restaurant*/
-$clr-btn:linear-gradient(to bottom,#FF79DA,#9356dc);
-
 .btn{
-    background-color:$clr-btn;
-    
-    position:relative;
-    z-index:1;
-     &:hover{
-         &::after{
-             opacity:1;
-         }
-     }
-    &::after{
-        content:"";
-        position:absolute;
-        top:0;
-        right:0;
-        bottom:0;
-        left:0;
-        opacity:5;
-        
-        z-index:-1;
-        transition:opacity 400ms;
+    &:hover{
+    transform:opacity(1);
+    animation-name: clrBright;
+    animation-duration:1000ms;  
     }
+}
+@keyframes clrBright{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0.5;
+    }
+
 }
 /*Case à cocher*/
 .check{
@@ -79,9 +70,97 @@ $clr-btn:linear-gradient(to bottom,#FF79DA,#9356dc);
 /*apparition des menus*/
 .menus{
     & .menu:nth-child(1){
-        opacity:0;
-        transition-delay:0.5s;
-        transition-property:opacity 400ms;
+        opacity:1;
+        animation:affichageMenu 2000ms ease-in-out;
+    }
+    & .menu:nth-child(2){
+        opacity:1;
+        animation:affichageMenu 2000ms ease-in-out;
+        animation-delay:400ms;
+    }
+    & .menu:nth-child(3){
+        opacity:1;
+        animation:affichageMenu 2000ms ease-in-out;
+        animation-delay:800ms;
     }
     
+}
+@keyframes affichageMenu{
+    0%{
+        opacity:1;
+        transform:translate(-5%,10%);
+
+}
+    30%{
+        opacity:1;
+        transform:translate(0%,0%);
+
+}
+}
+/*loading spinner*/
+.load{
+    &__spinner{
+        opacity:0;
+        height:100vh;
+        width:100%;
+        position:fixed;
+        text-align:center;
+        vertical-align:middle;
+        animation:loadSpinner 5000ms; 
+        animation-delay:5ms;
+        & i {    
+            opacity:1;
+            position:absolute;
+            color:red;
+            top:50vh;   
+        }
+        & i:nth-child(0){
+            animation:Spinner1 1667ms;
+            animation-delay:10ms;
+        }
+        & i:nth-child(0){
+            animation:Spinner2 1667ms;
+            animation-delay: 1667ms;
+        }
+        & i:nth-child(0){
+            animation:Spinner3 1667ms;
+            animation-delay:3333ms;
+        }
+    }
+}
+
+@keyframes loadSpinner{
+    from{
+        opacity:0.5;    
+        }
+    to{
+        opacity:0
+    }   
+}
+@keyframes Spinner1{
+    0%{
+        opacity:1;
+        transform:rotate(360deg);
+    }
+    99%,100%{
+        opacity:0
+    }
+}
+@keyframes Spinner2{
+    0%{
+        opacity:1;
+        transform:rotate(360deg);
+    }
+    99%,100%{
+        opacity:0
+    }
+}
+@keyframes Spinner3{
+    0%{
+        opacity:1;
+        transform:rotate(360deg);
+    }
+    99%,100%{
+        opacity:0
+    }
 }
