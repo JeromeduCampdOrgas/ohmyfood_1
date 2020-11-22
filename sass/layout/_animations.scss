@@ -7,23 +7,40 @@
         color:$primaire;
     }
 }
-/*page restaurant*/
+/*page restaurant*/    
 .btn{
+    background:$clr-btn;
+    color:$blanc;
+    padding:10px;
+    margin:auto;
+    border:none;
+    width:180px;
+    height:50px;
+    border-radius:25px;
+    box-shadow:3px 3px 3px #ccc;
+    transition:transform 500ms;
     &:hover{
-    transform:opacity(1);
-    animation-name: clrBright;
-    animation-duration:1000ms;  
+        cursor:pointer;
+        animation:testBtn  500ms linear;
+        animation-fill-mode:forwards;
+        transform:scale(1.08);
+            }
     }
-}
-@keyframes clrBright{
-    from{
-        opacity:1;
-    }
-    to{
-        opacity:0.5;
+    @keyframes testBtn{
+        from{
+            background:$btnHover;
+            box-shadow:5px 5px 5px #aaa;
+
+        }
+        to{
+            background:$btnHover;
+            box-shadow:7px 7px 7px #aaa;
+        }
     }
 
-}
+
+
+    
 /*Case à cocher*/
 .check{
     width:0;
@@ -71,16 +88,17 @@
 .menus{
     & .menu:nth-child(1){
         opacity:1;
-        animation:affichageMenu 1000ms cubic-bezier(0.66,.01,0,1);
+        animation:affichageMenu 2000ms cubic-bezier(0.66,.01,0,1);
+        animation-fill-mode: forwards;
     }
     & .menu:nth-child(2){
         opacity:1;
-        animation:affichageMenu 1000ms cubic-bezier(0.66,.01,0,1);
+        animation:affichageMenu 2000ms cubic-bezier(0.66,.01,0,1);
         animation-delay:150ms;
     }
     & .menu:nth-child(3){
         opacity:1;
-        animation:affichageMenu 1000ms cubic-bezier(0.66,.01,0,1);
+        animation:affichageMenu 2000ms cubic-bezier(0.66,.01,0,1);
         animation-delay:290ms;
     }
     
@@ -88,7 +106,7 @@
 @keyframes affichageMenu{
     0%{
         opacity:1;
-        transform:translate(-5%,10%);
+        transform:translate(-3%,5%);
 
 }
     30%{
