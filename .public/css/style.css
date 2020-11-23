@@ -394,7 +394,7 @@ footer i {
   margin: auto;
   color: #9356DC;
   z-index: 1;
-  top: 50%;
+  top: 300px;
 }
 .load i:nth-child(1) {
   animation: Spinner1 1011ms ease-in-out 0s 1 normal none;
@@ -407,10 +407,6 @@ footer i {
 .load i:nth-child(3) {
   animation: Spinner3 1275ms ease-in-out 0s 1 normal none;
   animation-delay: 2256ms;
-}
-.load i:nth-child(4) {
-  animation: Spinner4 1511ms ease-in-out 0s 1 normal none;
-  animation-delay: 3190ms;
 }
 
 @keyframes loadSpinner {
@@ -436,33 +432,26 @@ footer i {
 }
 @keyframes Spinner2 {
   0% {
+    top: 290px;
     opacity: 1;
     transform: rotate(360deg);
     z-index: 1;
   }
   99%, 100% {
+    top: 290px;
     opacity: 0;
     z-index: -1;
   }
 }
 @keyframes Spinner3 {
   0% {
+    top: 262px;
     opacity: 1;
     transform: rotate(360deg);
     z-index: 1;
   }
   99%, 100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes Spinner4 {
-  0% {
-    opacity: 1;
-    transform: rotate(360deg);
-    z-index: 1;
-  }
-  99%, 100% {
+    top: 2622px;
     opacity: 0;
     z-index: -1;
   }
